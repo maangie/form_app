@@ -1,8 +1,9 @@
 class CreateBooks < ActiveRecord::Migration
   def change
     create_table :books do |t|
-      t.string :title
-      t.string :publish
+      t.string :title,   null: false
+      t.string :publish, null: false
+      t.string :isbn,    null: false
 
       t.timestamps null: false
     end

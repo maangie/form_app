@@ -1,0 +1,6 @@
+<% @books.each do |book| %>
+  <li>
+    <%= link_to(book.title, 
+                "http://www.books.or.jp/ResultDetail.aspx?isbn=#{book.isbn}") %>
+  </li>
+<% end %>
