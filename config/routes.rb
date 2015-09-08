@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'ajax#search'
   get 'ajax/search'
   post 'ajax/result'
 
